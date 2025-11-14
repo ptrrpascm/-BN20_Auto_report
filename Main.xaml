@@ -204,7 +204,7 @@
               <InArgument x:TypeArguments="x:String">C:\\py_lab\\py_execute\\exc_log\\splitJOB_log_</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:StartProcess WorkingDirectory="{x:Null}" sap2010:Annotation.AnnotationText="2&gt;&amp;1 เป็นการบอกว่า &quot;ส่ง standard error (2) ไปยังที่เดียวกับที่ standard output (1)&quot;" Arguments="[$&quot;/c set PYTHONIOENCODING=utf-8 &amp; py C:\\py_lab\\py_execute\\BN20_py\\{py_exc_name} &gt;&gt; {export_ziplog_path}&quot; &amp; Date.Now.ToString(&quot;yyyy_MM_dd&quot;) &amp; &quot;.txt 2&gt;&amp;1&quot;]" DisplayName="Start Process - cmd Syncronously" FileName="C:\Windows\System32\cmd.exe" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="StartProcess_1" StartType="Synchronously" Timeout="10000">
+          <ui:StartProcess WorkingDirectory="{x:Null}" sap2010:Annotation.AnnotationText="2&gt;&amp;1 เป็นการบอกว่า &quot;ส่ง standard error (2) ไปยังที่เดียวกับที่ standard output (1)&quot;" Arguments="[$&quot;/c set PYTHONIOENCODING=utf-8 &amp; py C:\\py_lab\\py_execute\\BN20_py\\{py_exc_name} &gt;&gt; {export_ziplog_path}&quot; &amp; Date.Now.ToString(&quot;yyyy_MM_dd&quot;) &amp; &quot;.txt 2&gt;&amp;1&quot;]" DisplayName="Start Process - cmd Syncronously" FileName="C:\Windows\System32\cmd.exe" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="StartProcess_1" StartType="Synchronously" Timeout="50000">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -249,7 +249,7 @@
                   <InArgument x:TypeArguments="x:String">C:\\py_lab\\py_execute\\exc_log\\BN20_report_log_</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:StartProcess WorkingDirectory="{x:Null}" sap2010:Annotation.AnnotationText="2&gt;&amp;1 เป็นการบอกว่า &quot;ส่ง standard error (2) ไปยังที่เดียวกับที่ standard output (1)&quot;" Arguments="[$&quot;/c py {pyexc_path} &gt;&gt; {export_log_path}&quot; &amp; Date.Now.ToString(&quot;yyyy_MM_dd&quot;) &amp; &quot;.txt 2&gt;&amp;1&quot;]" DisplayName="CMD - Synchronous" FileName="C:\Windows\System32\cmd.exe" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="StartProcess_2" StartType="Synchronously" Timeout="10000">
+              <ui:StartProcess WorkingDirectory="{x:Null}" sap2010:Annotation.AnnotationText="2&gt;&amp;1 เป็นการบอกว่า &quot;ส่ง standard error (2) ไปยังที่เดียวกับที่ standard output (1)&quot;" Arguments="[$&quot;/c py {pyexc_path} &gt;&gt; {export_log_path}&quot; &amp; Date.Now.ToString(&quot;yyyy_MM_dd&quot;) &amp; &quot;.txt 2&gt;&amp;1&quot;]" DisplayName="CMD - Synchronous" FileName="C:\Windows\System32\cmd.exe" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="StartProcess_2" StartType="Synchronously" Timeout="150000">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -1077,7 +1077,7 @@ System.Text.RegularExpressions.Regex.Match(link, "(?&lt;Invoice&gt;[^\/]+)/(?&lt
             <av:PointCollection x:Key="ConnectorLocation">300,215 300,265</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Sequence sap2010:Annotation.AnnotationText="Init variable&#xA;_path_trigger&#xA;_date_exc&#xA;_img_adrees_root&#xA;_attachment_adrees_root" DisplayName="Init var" sap:VirtualizedContainerService.HintSize="496,1054" sap2010:WorkflowViewState.IdRef="Sequence_20">
+        <Sequence sap2010:Annotation.AnnotationText="Init variable 2025_11_13&#xA;_path_trigger&#xA;_date_exc&#xA;_img_adrees_root&#xA;_attachment_adrees_root" DisplayName="Init var" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Sequence_20">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="_date_today" />
           </Sequence.Variables>
@@ -1108,12 +1108,12 @@ System.Text.RegularExpressions.Regex.Match(link, "(?&lt;Invoice&gt;[^\/]+)/(?&lt
               <InArgument x:TypeArguments="x:String">[Today.ToString("yyyy_MM_dd")]</InArgument>
             </Assign.Value>
           </Assign>
-          <Assign sap2010:Annotation.AnnotationText="Date config manual&#xD;&#xA;format &quot;2025_11_04&quot;" sap:VirtualizedContainerService.HintSize="434,156" sap2010:WorkflowViewState.IdRef="Assign_13">
+          <Assign sap2010:Annotation.AnnotationText="Date config manual&#xA;format &quot;2025_11_04&quot;" sap:VirtualizedContainerService.HintSize="434,156" sap2010:WorkflowViewState.IdRef="Assign_13">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[_date_exc]</OutArgument>
             </Assign.To>
             <Assign.Value>
-              <InArgument x:TypeArguments="x:String">[_date_today]</InArgument>
+              <InArgument x:TypeArguments="x:String">2025_11_13</InArgument>
             </Assign.Value>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
